@@ -159,7 +159,10 @@ sqdata_raw &lt;- read_table2(&quot;data/gamTrix_Squid_2013_01_07.txt&quot;)
 #skimr::skim(sqdata_raw)</code></pre>
 <div id="wrangle-and-plot." class="section level3">
 <h3>Wrangle and plot.</h3>
-<p>According to <code>sem_figsFinal.m</code>, errorbars were calculated by: <code>errorbar(semTrixSqYrUni, Lo_median_q_nY(:,1), abs(Lo_median_q_nY(:,2)-Lo_median_q_nY(:,1)), abs(Lo_median_q_nY(:,3)-Lo_median_q_nY(:,1)), 'c', 'linewidth', 2)</code></p>
+<!---
+According to `sem_figsFinal.m`, errorbars were calculated by: 
+`errorbar(semTrixSqYrUni, Lo_median_q_nY(:,1), abs(Lo_median_q_nY(:,2)-Lo_median_q_nY(:,1)), abs(Lo_median_q_nY(:,3)-Lo_median_q_nY(:,1)), 'c', 'linewidth', 2)`
+--->
 <pre class="r"><code>## wrangle; summarize by median as in original
 sqdata &lt;- sqdata_raw %&gt;%
   select(-X8) %&gt;%

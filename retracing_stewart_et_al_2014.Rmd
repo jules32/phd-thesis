@@ -49,8 +49,10 @@ sqdata_raw <- read_table2("data/gamTrix_Squid_2013_01_07.txt")
 
 ### Wrangle and plot. 
 
+<!---
 According to `sem_figsFinal.m`, errorbars were calculated by: 
 `errorbar(semTrixSqYrUni, Lo_median_q_nY(:,1), abs(Lo_median_q_nY(:,2)-Lo_median_q_nY(:,1)), abs(Lo_median_q_nY(:,3)-Lo_median_q_nY(:,1)), 'c', 'linewidth', 2)`
+--->
 
 ```{r, warning=FALSE}
 ## wrangle; summarize by median as in original
